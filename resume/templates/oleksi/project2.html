@@ -1,0 +1,34 @@
+{% extends 'oleksi/home.html' %}
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'oleksi/css/proj1.css' %}">
+
+<h3>📝 Project Description — Petrikivka Restaurant Flask Website</h3>
+<img src="{% static 'oleksi/pics/restaurant.jpg' %}" alt="My image">
+
+<p>
+Petrikiva is a restaurant web application built with <strong>Flask</strong> to deliver a seamless and modern online dining experience.
+The platform allows users to explore the restaurant menu, register personal accounts, and interact with the system through an intuitive and responsive UI.
+</p>
+
+<h3>Key features include:</h3>
+<ul style="list-style-type:none; padding-left: 0;">
+    <li>User Registration & Authentication — customers can create accounts and log in securely</li>
+    <li>Dynamic Menu System — the website displays an up-to-date food & drinks menu</li>
+    <li>Admin Dashboard — authorized staff can manage menu items, add new dishes, update pricing, and maintain the restaurant's offerings</li>
+    <li>Modular Backend Structure — built using Flask blueprints and clear MVC-style separation</li>
+    <li>Database Integration — persistent user and menu data storage for real restaurant functionality</li>
+</ul>
+
+<p>
+Petrikiva demonstrates practical knowledge of web development fundamentals, backend logic, CRUD operations, and secure authentication within a real-world restaurant scenario.
+It is designed to be scalable and flexible for future features, such as online ordering, reservations, or payment integration.
+</p>
+
+
+
+
+<a href="/">Come back</a>
+{% endblock %}

@@ -1,0 +1,54 @@
+ {% block content %}
+ {% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oleksi Portfolio</title>
+
+    <link rel="stylesheet" href="{% static 'oleksi/css/style.css' %}">
+</head>
+<body>
+
+
+
+
+<h1>Hi! My name is Oleksi and I'm your future employer</h1>
+<h3>I`m a Python backend developer that is currently looking for a job.</h3>
+
+<a href="/project1/">python telegram bot</a>
+<a href="/project2/">flask restaurant site</a>
+<a href="/project3/">fastapi technical help service</a>
+<p>
+<a href="/future/">___My future plans___</a>
+</p>
+
+<h2>give me a comment</h2>
+<form action="/" method="post">
+    {% csrf_token %}
+    <label>Your comment:</label>
+    <input type="text" name="comment">
+    <button type="submit">OK</button>
+</form>
+<h2>Comments:</h2>
+{% for c in comments %}
+    <p><b>● {{ c.comment_text }}</b> — {{ c.created_at }}</p>
+{% empty %}
+    <p>No comments yet. Be the first genius.</p>
+{% endfor %}
+
+{% endblock %}
+
+    <footer>
+        <div class="footer-container">
+            <h3>Contact Me:</h3>
+            <p>Email: <a href="mailto:oleksi@example.com">Oleksijkuracij38@gmail.com</a></p>
+            <p>Telegram: <a href="https://t.me/yourusername" target="_blank">@ukr_man_alex</a></p>
+            <p>GitHub: <a href="https://github.com/yourgithub" target="_blank">github.com/verlox_py</a></p>
+            <p class="copyright">© {{ year }} Oleksi Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
