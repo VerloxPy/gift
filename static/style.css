@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #f7f7fa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Фото */
+img {
+    width: 300px;
+    margin-top: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.2);
+    transition: transform .3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Маленький рядок тексту */
+h3 {
+    max-width: 800px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #555;
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* Лічильник */
+h5 {
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #4a4a4a;
+    background: #ffffff;
+    padding: 10px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+/* Великий текст */
+h2 {
+    max-width: 900px;
+    margin-top: 25px;
+    padding: 25px 30px;
+    font-size: 26px;
+    font-weight: normal;
+    line-height: 1.45;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    text-align: center;
+    color: #333;
+}
+
